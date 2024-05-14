@@ -18,6 +18,9 @@
     "idf.customAdapterTargetName": "ESP32-Wroom32",
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "gpio.h": "c",
+        "ledc.h": "c",
+        "esp_err.h": "c"
     }
 }
