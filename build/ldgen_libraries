@@ -1,4 +1,4 @@
-C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/xtensa/libxtensa.a
+C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/riscv/libriscv.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/efuse/libefuse.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/esp_mm/libesp_mm.a
@@ -55,10 +55,10 @@ C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/espc
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/wear_levelling/libwear_levelling.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/sdmmc/libsdmmc.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/fatfs/libfatfs.a
+C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/ieee802154/libieee802154.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/json/libjson.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/mqtt/libmqtt.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a
-C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/perfmon/libperfmon.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/spiffs/libspiffs.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/main/libmain.a
