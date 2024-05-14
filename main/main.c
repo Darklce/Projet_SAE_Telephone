@@ -47,7 +47,7 @@ void app_main(void)
     vTaskDelay(100/ portTICK_PERIOD_MS); //Attend 1 seconde
     ESP_ERROR_CHECK(ledc_stop(LEDC_LOW_SPEED_MODE, pwmChannel, 0)); //Arrête le PWM (0 = Ne pas attendre la fin du cycle actuel
    }
-    
+     
    
     
 }  
