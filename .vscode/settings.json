@@ -23,6 +23,7 @@
         "ledc.h": "c",
         "esp_err.h": "c",
         "fonction.h": "c",
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "esp_log.h": "c"
     }
 }
