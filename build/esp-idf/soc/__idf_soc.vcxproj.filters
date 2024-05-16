@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\lldesc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\dport_access_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\interrupts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\gpio_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\uart_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\adc_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\dedic_gpio_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\gdma_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\spi_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\ledc_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\pcnt_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\rmt_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\sdm_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\i2s_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\i2c_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\temperature_sensor_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\timer_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\parlio_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\mcpwm_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\mpi_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\twai_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\ieee802154_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\rtc_io_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\esp32c6\sdio_slave_periph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\soc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BC0FB00D-1862-34F1-A5FD-618F35E67113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

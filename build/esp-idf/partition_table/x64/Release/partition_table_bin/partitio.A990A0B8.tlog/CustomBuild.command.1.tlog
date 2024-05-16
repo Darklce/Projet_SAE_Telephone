@@ -1,0 +1,36 @@
+^C:\USERS\THOMA\ONEDRIVE\DOCUMENTS\GITHUB\PROJET_SAE_TELEPHONE\BUILD\CMAKEFILES\46BDD9765C1536282BE51FB968B8C6C5\PARTITION-TABLE.BIN.RULE
+setlocal
+C:\Users\thoma\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/thoma/esp/v5.2.1/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- C:/Users/thoma/esp/v5.2.1/esp-idf/components/partition_table/partitions_singleapp.csv C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/partition_table/partition-table.bin
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -E echo "Partition table binary generated. Contents:"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -E echo *******************************************************************************
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\thoma\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/thoma/esp/v5.2.1/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/partition_table/partition-table.bin
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -E echo *******************************************************************************
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\THOMA\ONEDRIVE\DOCUMENTS\GITHUB\PROJET_SAE_TELEPHONE\BUILD\CMAKEFILES\D26DB6C8E0189DACB9E8BAC8509ED9B5\PARTITION_TABLE_BIN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\THOMA\ESP\V5.2.1\ESP-IDF\COMPONENTS\PARTITION_TABLE\CMAKELISTS.TXT
+setlocal
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -SC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone -BC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build --check-stamp-file C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/partition_table/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

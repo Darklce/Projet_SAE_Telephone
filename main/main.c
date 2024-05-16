@@ -5,6 +5,10 @@
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include <driver/rmt_rx.h>
+#include <driver/rmt_tx.h>
+#include <driver/rmt_types_legacy.h>
+#include "driver/rmt.h"
+#include "sonneries.h"
 
 int pwmChannel = 0; //Choisit le canal 0
 int frequence = 440; //Fréquence PWM de 1 KHz
@@ -52,31 +56,63 @@ void app_main(void)
         .timer_sel = LEDC_TIMER_0 //Timer 0
     };
 
-    printf("Debug_V14\n"); // Print "Debug_V13" to the console   
+    //printf("Debug_V14\n"); // Print "Debug_V14" to the console   
     ESP_ERROR_CHECK(ledc_channel_config(&pwm_channel)); //Configure le canal PWM
     ESP_ERROR_CHECK(ledc_timer_config(&pwm_config)); //Configure le timer PWM
     ESP_ERROR_CHECK(ledc_stop(LEDC_LOW_SPEED_MODE, pwmChannel, 0)); //Arrête le PWM (0 = Ne pas attendre la fin du cycle actuel)
-
-   while (true)
-   {
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_LOW_SPEED_MODE, pwmChannel)); //Démarre le PWM à 0
-    ESP_ERROR_CHECK(ledc_set_freq(pwm_channel.speed_mode, pwm_config.timer_num,440)); // Fréquence à 440 Hz
-    vTaskDelay(400 / portTICK_PERIOD_MS); //Attend 1 seconde
-    ESP_ERROR_CHECK(ledc_stop(LEDC_LOW_SPEED_MODE, pwmChannel, 0)); //Arrête le PWM (0 = Ne pas attendre la fin du cycle actuel)
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_LOW_SPEED_MODE, pwmChannel)); //Démarre le PWM à 0
-    ESP_ERROR_CHECK(ledc_set_freq(pwm_channel.speed_mode, pwm_config.timer_num,550)); //Fréquence à 550 Hz
-    vTaskDelay(100/ portTICK_PERIOD_MS); //Attend 1 seconde
-    ESP_ERROR_CHECK(ledc_stop(LEDC_LOW_SPEED_MODE, pwmChannel, 0)); //Arrête le PWM (0 = Ne pas attendre la fin du cycle actuel)
-   }
     
-    rmt_rx_channel_config_t rx_chan = {}; // Initialize rx_chan with an empty struct
-
     
+    rmt_channel_handle_t rx_chan = NULL; // Initialize rx_chan with an empty struct
+    rmt_rx_channel_config_t rx_chan_config = {
+
+         // Configuration du module RMT.   
+             .clk_src = RMT_CLK_SRC_DEFAULT,// clk_src: Source d'horloge par défaut pour le module RMT.
+             .resolution_hz = 1*1000*1000,  // resolution_hz: Résolution en hertz pour le module RMT.
+             .mem_block_symbols = 64, //mem_block_symbols: Nombre de symboles dans le bloc mémoire du module RMT.
+             .gpio_num = 3, //gpio_num: Numéro du GPIO utilisé pour le module RMT.
+             .flags.invert_in = false, //flags.invert_in: Indique si le signal d'entrée doit être inversé ou non.
+             .flags.with_dma = false, // flags.with_dma: Indique si le module RMT doit être utilisé avec le DMA ou non.
+
+    };
+    rmt_receive_config_t rmt_receive_config = {
+
+        .signal_range_min_ns = 1250, // signal_range_min_ns: Durée minimale d'un signal en nanosecondes.
+        .signal_range_max_ns = 2500000, // signal_range_max_ns: Durée maximale d'un signal en nanosecondes.
+
+    };  
+    rmt_symbol_word_t raw_symbols[32]; // Initialize raw_symbols with an empty struct
+    ESP_ERROR_CHECK(rmt_new_rx_channel(&rx_chan_config, &rx_chan)); // Configure the RMT receiver channel
+    printf("rx_chan pointer value: %p\n", (void*)rx_chan);
+    //printf("Valeur : %d\n", rx_chan); // Print the GPIO number of the RMT receiver channel
+    vTaskDelay(1000 / portTICK_PERIOD_MS); // Wait for 1 second
+while (true)
+{
+    ESP_ERROR_CHECK(rmt_enable(rx_chan)); // Enable the RMT receiver channel interrupt
+    ESP_ERROR_CHECK(rmt_receive(rx_chan,raw_symbols,sizeof(raw_symbols), &rmt_receive_config)); // Start the RMT receiver channel
+    
+    rmt_item32_t *items = (rmt_item32_t *) raw_symbols; // Initialize items with the raw_symbols struct
+    rmt_item32_t *item = items; // Initialize item with the items struct
+    rmt_item32_t *item_end = items + sizeof(raw_symbols) / sizeof(rmt_item32_t); // Initialize item_end with the items struct
+    for (int i = 0; i < sizeof(raw_symbols) / sizeof(rmt_item32_t); i++) // Loop through the raw_symbols array
+    {
+        printf("%d", item->level0); // Print the level0 value of the current item
+        item++; // Increment the item pointer
+        
+    }
 
 
+    //rmt_write_items(0, raw_symbols, sizeof(raw_symbols), true); // Write the raw_symbols array to the RMT receiver channel
+    ESP_ERROR_CHECK(rmt_disable(rx_chan)); // Disable the RMT receiver channel interrupt
+    vTaskDelay(1000 / portTICK_PERIOD_MS); // Wait for 1 second
+    printf("\n"); // Print a newline character
 
-
+}
 
    
-    
-}  
+   // printf("Debug_V14\n"); // Print "Debug_V14" to the console
+//   vTaskDelay(10000 / portTICK_PERIOD_MS); // Wait for 1 second
+    //ring(pwm_config, pwm_channel); // Call the ring function with the pwm_config and pwm_channel structs as arguments
+
+}
+
+  

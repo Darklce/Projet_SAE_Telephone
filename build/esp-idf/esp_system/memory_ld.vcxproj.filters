@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_system\ld\esp32c6\memory.ld.in">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\d988509ba98442bdfeb50a0f2eb0d430\memory_ld.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_system\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\esp-idf\esp_system\CMakeFiles\memory_ld" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EEA0E22C-D73F-303A-9D36-FB948E1A68CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{07FA1E50-2864-3621-99AE-B3D28A191123}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

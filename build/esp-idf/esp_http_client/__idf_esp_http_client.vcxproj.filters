@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_http_client\esp_http_client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_http_client\lib\http_auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_http_client\lib\http_header.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_http_client\lib\http_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_http_client\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BC0FB00D-1862-34F1-A5FD-618F35E67113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

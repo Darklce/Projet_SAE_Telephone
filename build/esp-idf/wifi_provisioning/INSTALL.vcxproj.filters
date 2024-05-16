@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\f1e30a67d3bb54205982862939cad22e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EEA0E22C-D73F-303A-9D36-FB948E1A68CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

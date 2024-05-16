@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\eb689196e9bb2dd54d3af2bc62ef27c5\sections.ld.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\d988509ba98442bdfeb50a0f2eb0d430\__ldgen_output_sections.ld.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_system\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\esp-idf\esp_system\CMakeFiles\__ldgen_output_sections.ld" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EEA0E22C-D73F-303A-9D36-FB948E1A68CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\9828c328fb7ddb46fa7b6992909bcea9\efuse-common-table.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\efuse\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\esp-idf\efuse\CMakeFiles\efuse-common-table" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EEA0E22C-D73F-303A-9D36-FB948E1A68CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

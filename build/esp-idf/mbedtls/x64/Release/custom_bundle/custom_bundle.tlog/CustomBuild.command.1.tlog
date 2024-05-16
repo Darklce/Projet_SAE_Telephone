@@ -1,0 +1,10 @@
+^C:\USERS\THOMA\ESP\V5.2.1\ESP-IDF\COMPONENTS\MBEDTLS\CMAKELISTS.TXT
+setlocal
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -SC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone -BC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build --check-stamp-file C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/mbedtls/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

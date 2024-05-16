@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CheckCCompilerFlag.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/FindPackageMessage.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/FindPython/Support.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/FindPython3.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/thoma/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt

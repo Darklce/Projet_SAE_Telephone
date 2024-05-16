@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\esp_ieee802154.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_ack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_dev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_pib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_sec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\driver\esp_ieee802154_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\ieee802154\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BC0FB00D-1862-34F1-A5FD-618F35E67113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

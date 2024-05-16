@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\5456a1a06af4c96eb3b39612081d8df3\project_elf_src_esp32c6.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\974e10739970849ac9a4348b35273c3b\_project_elf_src.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\_project_elf_src" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EEA0E22C-D73F-303A-9D36-FB948E1A68CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

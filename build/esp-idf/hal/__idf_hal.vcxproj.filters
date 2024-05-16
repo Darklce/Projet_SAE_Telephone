@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\hal_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\efuse_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\esp32c6\efuse_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\lp_timer_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\mmu_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\cache_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_flash_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_flash_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_flash_encrypt_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\esp32c6\clk_tree_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\uart_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\uart_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\gpio_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\rtc_io_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\timer_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\ledc_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\ledc_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\i2c_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\i2c_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\rmt_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\pcnt_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\mcpwm_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\twai_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\twai_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\gdma_hal_top.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\gdma_hal_ahb_v1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\i2s_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\sdm_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\etm_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\parlio_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\adc_hal_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\adc_oneshot_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\adc_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\ecc_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\mpi_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\sha_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\aes_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\esp32c6\modem_clock_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\esp32c6\pau_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\brownout_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_slave_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_slave_hal_iram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_slave_hd_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\spi_flash_hal_gpspi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\sdio_slave_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\esp32c6\pmu_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\apm_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\hmac_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\ds_hal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\hal\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BC0FB00D-1862-34F1-A5FD-618F35E67113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

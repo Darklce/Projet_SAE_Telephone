@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CMakeASMInformation.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CheckIncludeFile.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CheckTypeSize.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake
+C:/Users/thoma/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/Compiler/GNU.cmake
+C:/Users/thoma/esp/v5.2.1/esp-idf/CMakeLists.txt

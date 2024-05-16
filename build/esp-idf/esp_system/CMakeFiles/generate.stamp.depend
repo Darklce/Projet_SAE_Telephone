@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/ldgen_libraries.in
+C:/Users/thoma/esp/v5.2.1/esp-idf/components/esp_system/CMakeLists.txt
+C:/Users/thoma/esp/v5.2.1/esp-idf/components/esp_system/ld/ld.cmake

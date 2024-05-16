@@ -1,0 +1,28 @@
+^C:\USERS\THOMA\ONEDRIVE\DOCUMENTS\GITHUB\PROJET_SAE_TELEPHONE\BUILD\CMAKEFILES\5456A1A06AF4C96EB3B39612081D8DF3\PROJECT_ELF_SRC_ESP32C6.C.RULE
+setlocal
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -E touch C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/project_elf_src_esp32c6.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\THOMA\ONEDRIVE\DOCUMENTS\GITHUB\PROJET_SAE_TELEPHONE\BUILD\CMAKEFILES\974E10739970849AC9A4348B35273C3B\_PROJECT_ELF_SRC.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\THOMA\ONEDRIVE\DOCUMENTS\GITHUB\PROJET_SAE_TELEPHONE\CMAKELISTS.TXT
+setlocal
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -SC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone -BC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build --check-stamp-file C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\gpio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\gpio_glitch_filter_ops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\rtc_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\spi_bus_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\adc_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\adc_dma_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\parlio\parlio_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\parlio\parlio_tx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\dedic_gpio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\gpio_pin_glitch_filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\gpio_flex_glitch_filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gpio\gpio_etm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gptimer\gptimer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gptimer\gptimer_priv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\timer_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\gptimer\gptimer_etm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2c\i2c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2c\i2c_master.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2c\i2c_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2c\i2c_slave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2s\i2s_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2s\i2s_platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2s\i2s_std.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\i2s_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2s\i2s_pdm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\i2s\i2s_tdm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\ledc\ledc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_cap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_cmpr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_com.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_fault.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_gen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_oper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\mcpwm_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\mcpwm\mcpwm_etm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\pcnt\pulse_cnt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\pcnt_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\rmt\rmt_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\rmt\rmt_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\rmt\rmt_rx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\rmt\rmt_tx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\rmt_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\sdio_slave\sdio_slave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\sigma_delta\sdm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\sigma_delta_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\gpspi\spi_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\gpspi\spi_master.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\gpspi\spi_slave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\sdspi\sdspi_crc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\sdspi\sdspi_host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\sdspi\sdspi_transaction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\spi\gpspi\spi_slave_hd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\temperature_sensor\temperature_sensor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\deprecated\rtc_temperature_legacy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\twai\twai.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\uart\uart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\usb_serial_jtag\usb_serial_jtag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\usb_serial_jtag\usb_serial_jtag_connection_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\driver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BC0FB00D-1862-34F1-A5FD-618F35E67113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

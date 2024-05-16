@@ -1,0 +1,28 @@
+^C:\USERS\THOMA\ESP\V5.2.1\ESP-IDF\COMPONENTS\ESP_SYSTEM\LD\ESP32C6\MEMORY.LD.IN
+setlocal
+C:\Users\thoma\.espressif\tools\riscv32-esp-elf\esp-13.2.0_20230928\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -C -P -x c -E -o C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/esp_system/ld/memory.ld -I C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/config -I C:/Users/thoma/esp/v5.2.1/esp-idf/components/esp_system/ld C:/Users/thoma/esp/v5.2.1/esp-idf/components/esp_system/ld/esp32c6/memory.ld.in
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\THOMA\ONEDRIVE\DOCUMENTS\GITHUB\PROJET_SAE_TELEPHONE\BUILD\CMAKEFILES\D988509BA98442BDFEB50A0F2EB0D430\MEMORY_LD.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\THOMA\ESP\V5.2.1\ESP-IDF\COMPONENTS\ESP_SYSTEM\CMAKELISTS.TXT
+setlocal
+C:\Users\thoma\.espressif\tools\cmake\3.24.0\bin\cmake.exe -SC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone -BC:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build --check-stamp-file C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/esp_system/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

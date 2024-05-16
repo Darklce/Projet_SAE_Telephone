@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/app-flash_args
+C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/esptool_py/app-flash_args.in
+C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/esp-idf/esptool_py/flasher_args.json.in
+C:/Users/thoma/esp/v5.2.1/esp-idf/components/esptool_py/CMakeLists.txt
