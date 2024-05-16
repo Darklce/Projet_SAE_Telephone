@@ -99,12 +99,11 @@ void app_main(void)
     rmt_item32_t *item_end = items + sizeof(raw_symbols) / sizeof(rmt_item32_t); // Initialize item_end with the items struct
     for (int i = 0; i < sizeof(raw_symbols) / sizeof(rmt_item32_t); i++) // Loop through the raw_symbols array
     {
-     //   printf("%d", item->level0); // Print the level0 value of the current item
+        printf("%d", item->level0); // Print the level0 value of the current item
         item++; // Increment the item pointer
-        int level = gpio_get_level(GPIO_NUM_3); // Lire le niveau de la broche GPIO3
-        printf("%d", level); // Imprimer le niveau de la broche
+     //   int level = gpio_get_level(GPIO_NUM_3); // Lire le niveau de la broche GPIO3
+     //  printf("%d", level); // Imprimer le niveau de la broche
 
-    // ...
     }
 
 
