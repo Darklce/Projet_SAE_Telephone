@@ -9,7 +9,6 @@
 #include <driver/rmt_types_legacy.h>
 #include "driver/rmt.h"
 #include "sonneries.h"
-
 int pwmChannel = 0; //Choisit le canal 0
 int frequence = 440; //Fréquence PWM de 1 KHz
 int resolution = 8; // Résolution de 8 bits, 256 valeurs possibles
@@ -80,13 +79,18 @@ void app_main(void)
         .signal_range_max_ns = 2500000, // signal_range_max_ns: Durée maximale d'un signal en nanosecondes.
 
     };  
+
+
+
     rmt_symbol_word_t raw_symbols[32]; // Initialize raw_symbols with an empty struct
     ESP_ERROR_CHECK(rmt_new_rx_channel(&rx_chan_config, &rx_chan)); // Configure the RMT receiver channel
     printf("rx_chan pointer value: %p\n", (void*)rx_chan);
+
+  while (true)
+{  
     //printf("Valeur : %d\n", rx_chan); // Print the GPIO number of the RMT receiver channel
     vTaskDelay(1000 / portTICK_PERIOD_MS); // Wait for 1 second
-while (true)
-{
+
     ESP_ERROR_CHECK(rmt_enable(rx_chan)); // Enable the RMT receiver channel interrupt
     ESP_ERROR_CHECK(rmt_receive(rx_chan,raw_symbols,sizeof(raw_symbols), &rmt_receive_config)); // Start the RMT receiver channel
     
@@ -95,9 +99,12 @@ while (true)
     rmt_item32_t *item_end = items + sizeof(raw_symbols) / sizeof(rmt_item32_t); // Initialize item_end with the items struct
     for (int i = 0; i < sizeof(raw_symbols) / sizeof(rmt_item32_t); i++) // Loop through the raw_symbols array
     {
-        printf("%d", item->level0); // Print the level0 value of the current item
+     //   printf("%d", item->level0); // Print the level0 value of the current item
         item++; // Increment the item pointer
-        
+        int level = gpio_get_level(GPIO_NUM_3); // Lire le niveau de la broche GPIO3
+        printf("%d", level); // Imprimer le niveau de la broche
+
+    // ...
     }
 
 

@@ -50,3 +50,16 @@ cl : ligne de commande  error D8021: argument numérique non valide '/Wextra' [C
 
 Source file was:
 int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS failed with the following output:
+Change Dir: C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4a961.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Version MSBuild 17.8.5+b5265ef37 pour .NET Framework
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.38.33134 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /Wall /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a961.dir\Debug\\" /Fd"cmTC_4a961.dir\Debug\vc143.pdb" /external:W4 /Gd /TC /errorReport:queue  -march=rv32imac_zicsr_zifencei -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\CMakeTmp\src.c
+cl : ligne de commande  error D8021: argument numérique non valide '/Wextra' [C:\Users\thoma\OneDrive\Documents\GitHub\Projet_SAE_Telephone\build\CMakeFiles\CMakeTmp\cmTC_4a961.vcxproj]
+
+
+Source file was:
+int main(void) { return 0; }
