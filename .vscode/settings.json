@@ -2,5 +2,6 @@
     "idf.adapterTargetName": "esp32c6",
     "idf.flashType": "UART",
     "idf.portWin": "COM6",
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.errorSquiggles": "enabled"
 }
