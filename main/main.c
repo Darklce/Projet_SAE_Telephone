@@ -10,6 +10,8 @@
 #include "driver/rmt.h"
 #include "sonneries.h"
 #include "driver/gpio.h"
+
+#include "driver/timer.h"
 int pwmChannel = 0;  // Choisit le canal 0
 int frequence = 440; // Fréquence PWM de 1 KHz
 int resolution = 8;  // Résolution de 8 bits, 256 valeurs possibles
@@ -130,40 +132,78 @@ void app_main(void)
      **/
 
     gpio_config_t gpio_configuration = {
-        .pin_bit_mask = (1 << 3), // GPIO 3
-        .mode = GPIO_MODE_INPUT,     // Configure le GPIO 3 comme entrée
-        .pull_up_en = GPIO_PULLUP_DISABLE, // Désactive PULLUP
+        .pin_bit_mask = (1 << 3),              // GPIO 3
+        .mode = GPIO_MODE_INPUT,               // Configure le GPIO 3 comme entrée
+        .pull_up_en = GPIO_PULLUP_DISABLE,     // Désactive PULLUP
         .pull_down_en = GPIO_PULLDOWN_DISABLE, // Désactive PULLDOWN
-        .intr_type = GPIO_INTR_POSEDGE // Compteur de front montant
-    }; 
+        .intr_type = GPIO_INTR_NEGEDGE         // Compteur de front descendant
+    };
 
     gpio_config(&gpio_configuration); // Configure le GPIO
-while (true)
-{
+
+    int l_int_time = 0;      // Déclarer une variable pour stocker le temps
+    int l_int_time_old = 0;  // Déclarer une variable pour stocker le temps précédent
     int l_inttab_values[33]; // Déclarer un tableau de 33 entiers
 
-    if (gpio_get_level(GPIO_NUM_3) == 0) // Si le niveau de la broche GPIO3 est à 1
+    timer_config_t timer_config = {
+        .alarm_en = TIMER_ALARM_EN,         // Activer l'alarme
+        .counter_en = TIMER_START,          // Démarrer le compteur
+        .intr_type = TIMER_INTR_LEVEL,      // Type d'interruption
+        .counter_dir = TIMER_COUNT_UP,      // Compteur vers le haut
+        .auto_reload = TIMER_AUTORELOAD_EN, // Activer le rechargement automatique
+        .divider = 80                       // Diviseur de 80
+
+    };
+    timer_init(TIMER_GROUP_0, TIMER_0, &timer_config);
+
+    /*
+
+
+            if (gpio_get_level(GPIO_NUM_3) == 0) // Si le niveau de la broche GPIO3 est à 0
+            {
+                for (size_t i = 0; i < 33; i++)
+                {
+                    l_inttab_values[i] = gpio_get_level(GPIO_NUM_3); // Lire le niveau de la broche GPIO3
+                    vTaskDelay(2 / portTICK_PERIOD_MS);            // Attendre 100 ms
+                    printf("%i", l_inttab_values[i]);                // Imprimer le niveau de la broche
+                }
+                printf("\n");                // Imprimer le niveau de la broche
+
+            }
+            else // Sinon
+            {
+            }
+            vTaskDelay(1);
+    */
+    TickType_t tickCount1, tickCount2;
+    while (true)
     {
-          for (size_t i = 0; i < 33; i++)
-    {   
-       l_inttab_values[i] = gpio_get_level(GPIO_NUM_3); // Lire le niveau de la broche GPIO3
-       vTaskDelay(100 / portTICK_PERIOD_MS); // Attendre 100 mseconde
-       printf("%i", l_inttab_values[i]); // Imprimer le niveau de la broche 
 
+        if (gpio_get_level(GPIO_NUM_3) == 0)
+        {
+            timer_start(TIMER_GROUP_0, TIMER_0);
+
+            if (gpio_get_level(GPIO_NUM_3) == 1)
+            {
+                timer_get_counter_value(TIMER_GROUP_0, TIMER_0, &tickCount1);
+                do
+                {
+                    timer_get_counter_value(TIMER_GROUP_0, TIMER_0, &tickCount2);
+
+                } while ((tickCount1 - tickCount2) < 2500);
+
+                printf("TEST\n");
+            }
+        }
     }
-    }
-    else // Sinon
-    {
-    }
-  
-    printf("\n");  
-
-
-    vTaskDelay(200 / portTICK_PERIOD_MS); // Attendre 1 seconde
-}  
-
-    
-
-
+    /*        while (1)
+            {
+                timer_get_counter_value(TIMER_GROUP_0,TIMER_0, &tickCount1);
+                vTaskDelay(1000/portTICK_PERIOD_MS);
+                timer_get_counter_value(TIMER_GROUP_0,TIMER_0, &tickCount2);
+                printf("[%ld] %lu ms have passed!\r\n",
+                       tickCount2, (tickCount2 - tickCount1)*1000/CONFIG_FREERTOS_HZ);
+            }
+    */
+    // Boucle infinie pour prendre la valeur attendre 1 secondes pour test le timer avec résultat en MicroSeconde
 }
-
