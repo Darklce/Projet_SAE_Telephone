@@ -265,10 +265,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\thoma\esp\v5.2.1\esp-idf\components\esp_app_format\esp_app_desc.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);PROJECT_VER="3d4e292-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);PROJECT_VER="3d4e292-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(PreprocessorDefinitions);PROJECT_VER="3d4e292-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(PreprocessorDefinitions);PROJECT_VER="3d4e292-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);PROJECT_VER="f3e423e-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);PROJECT_VER="f3e423e-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(PreprocessorDefinitions);PROJECT_VER="f3e423e-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(PreprocessorDefinitions);PROJECT_VER="f3e423e-dirty"; PROJECT_NAME="Projet_SAE_Telephone"</PreprocessorDefinitions>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

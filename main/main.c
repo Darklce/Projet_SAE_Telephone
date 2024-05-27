@@ -142,14 +142,20 @@ while (true)
 {
     int l_inttab_values[33]; // Déclarer un tableau de 33 entiers
 
-    for (size_t i = 0; i < 33; i++)
+    if (gpio_get_level(GPIO_NUM_3) == 0) // Si le niveau de la broche GPIO3 est à 1
+    {
+          for (size_t i = 0; i < 33; i++)
     {   
        l_inttab_values[i] = gpio_get_level(GPIO_NUM_3); // Lire le niveau de la broche GPIO3
        vTaskDelay(100 / portTICK_PERIOD_MS); // Attendre 100 mseconde
        printf("%i", l_inttab_values[i]); // Imprimer le niveau de la broche 
 
     }
-    
+    }
+    else // Sinon
+    {
+    }
+  
     printf("\n");  
 
 

@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "Projet_SAE_Telephone",
-    "project_version":    "3d4e292-dirty",
+    "project_version":    "f3e423e-dirty",
     "project_path":       "C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone",
     "idf_path":           "C:/Users/thoma/esp/v5.2.1/esp-idf",
     "build_dir":          "C:/Users/thoma/OneDrive/Documents/GitHub/Projet_SAE_Telephone/build",
