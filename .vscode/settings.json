@@ -1,6 +1,6 @@
 {
-    "C_Cpp.intelliSenseEngine": "default",
     "idf.adapterTargetName": "esp32c6",
+<<<<<<< HEAD
     "idf.customExtraPaths": "C:\\Users\\thoma\\.espressif\\tools\\xtensa-esp-elf-gdb\\12.1_20231023\\xtensa-esp-elf-gdb\\bin;C:\\Users\\thoma\\.espressif\\tools\\riscv32-esp-elf-gdb\\12.1_20231023\\riscv32-esp-elf-gdb\\bin;C:\\Users\\thoma\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20230928\\xtensa-esp-elf\\bin;C:\\Users\\thoma\\.espressif\\tools\\riscv32-esp-elf\\esp-13.2.0_20230928\\riscv32-esp-elf\\bin;C:\\Users\\thoma\\.espressif\\tools\\esp32ulp-elf\\2.35_20220830\\esp32ulp-elf\\bin;C:\\Users\\thoma\\.espressif\\tools\\cmake\\3.24.0\\bin;C:\\Users\\thoma\\.espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20230921\\openocd-esp32\\bin;C:\\Users\\thoma\\.espressif\\tools\\ninja\\1.11.1;C:\\Users\\thoma\\.espressif\\tools\\idf-exe\\1.0.3;C:\\Users\\thoma\\.espressif\\tools\\ccache\\4.8\\ccache-4.8-windows-x86_64;C:\\Users\\thoma\\.espressif\\tools\\dfu-util\\0.11\\dfu-util-0.11-win64;C:\\Users\\thoma\\.espressif\\tools\\esp-rom-elfs\\20230320",
     "idf.customExtraVars": {
         "OPENOCD_SCRIPTS": "C:\\Users\\thoma\\.espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
@@ -17,3 +17,10 @@
     "idf.toolsPathWin": "C:\\Users\\thoma\\.espressif",
     "idf.flashType": "UART"
 }
+=======
+    "idf.flashType": "UART",
+    "idf.portWin": "COM6",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.errorSquiggles": "enabled"
+}
+>>>>>>> 38160a20731345d7b73d0c40df664567c70ac851
