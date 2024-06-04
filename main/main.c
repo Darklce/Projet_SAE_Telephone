@@ -343,6 +343,11 @@ void app_main()
         LireEntree();
         Evoluer();
         MiseAJour();
+<<<<<<< HEAD
+=======
+        ring(pwm_config, pwm_channel);
+
+>>>>>>> b67a40bcd2dafebc309edd9124b29e6bf187bbb4
         if (l_int_cptPlay == 35)
         {
             ESP_ERROR_CHECK(ledc_update_duty(LEDC_LOW_SPEED_MODE, pwmChannel));                // Démarre le PWM à 0
