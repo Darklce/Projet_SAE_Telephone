@@ -39,6 +39,7 @@ typedef enum
     START,
     ATT_END,
     END,
+    BOUTON,
 } Tetat;
 
 Tetat m_etat_courant;
@@ -63,6 +64,8 @@ int retry_num = 0;
 int l_int_cptStart = 0;
 int l_int_cptPlay = 0;
 int l_int_cptStop = 0;
+int m_bool_data_bp = 0;
+int m_bool_data_bp2 = 0;
 
 void Init()
 {
@@ -72,6 +75,8 @@ void Init()
 
 void LireEntree()
 {
+    m_bool_data_bp = gpio_get_level(GPIO_NUM_20);
+    m_bool_data_bp2 = gpio_get_level(GPIO_NUM_21);
     m_bool_data_ir = gpio_get_level(GPIO_NUM_3);
 }
 
@@ -86,6 +91,10 @@ void Evoluer()
         if (m_bool_data_ir == 0)
         {
             m_etat_courant = START;
+        }
+        if (m_bool_data_bp == 1)
+        {
+            m_etat_courant = BOUTON;
         }
         break;
     case START:
@@ -102,6 +111,12 @@ void Evoluer()
         break;
     case END:
         m_etat_courant = ATT_START;
+        break;
+    case BOUTON:
+        if (m_bool_data_bp == 0)
+        {
+            m_etat_courant = ATT_START;
+        }
         break;
     default:
         break;
@@ -155,9 +170,7 @@ void MiseAJour()
 
             printf("%i", l_int_tab_values[i]);
         }
-
         printf("\n");
-
         m_bool_ENDTRAME = true;
         break;
     case END:
@@ -191,6 +204,8 @@ void MiseAJour()
             printf("Stop \n");
         }
         break;
+        case BOUTON:
+        printf("Bouton\n");
     default:
         break;
     }
@@ -259,6 +274,9 @@ void wifiAP()
     vTaskDelay(1000 / portTICK_PERIOD_MS);
     printf("wifi_init_softap finished. SSID:%s password:%s", ssid, pass);
 }
+
+
+
 
 void app_main()
 {
